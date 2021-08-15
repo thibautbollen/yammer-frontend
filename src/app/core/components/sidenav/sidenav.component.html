@@ -1,0 +1,22 @@
+<mat-sidenav-container class="nav-container" [hasBackdrop]="true">
+  <mat-sidenav mode="side" [opened]="sideNavToggled" class="nav-sidenav">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/" routerLinkActive="active">Home</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <button
+        mat-icon-button
+        class="menu-icon"
+        aria-label="toggle side navigation menu"
+        (click)="toggleSideNav()"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span class="example-spacer"></span>
+      <span>Yammer</span>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

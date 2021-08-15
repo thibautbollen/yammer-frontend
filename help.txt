@@ -1,3 +1,30 @@
 ng g module modules -d
 
 ng g component navigaton -d
+
+ng g module auth -d
+
+ng g component login
+ng g component register
+
+
+ng g component profile-details
+ng g component profile-manage
+ng g component profile-manage
+
+ng g module company
+
+ng g component company-details
+ng g component company-create
+ng g component company-manage
+
+
+ng g module group
+
+ng g component group-manage
+ng g component group-overview
+ng g component group-details
+ng g component group-create
+
+
+ng g component topnav
