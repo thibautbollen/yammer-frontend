@@ -1,0 +1,3 @@
+ng g module modules -d
+
+ng g component navigaton -d
