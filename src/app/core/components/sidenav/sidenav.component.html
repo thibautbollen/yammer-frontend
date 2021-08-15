@@ -1,6 +1,6 @@
 <mat-sidenav-container class="nav-container" [hasBackdrop]="true">
   <mat-sidenav
-    mode="side"
+    mode="over"
     [opened]="sideNavToggled"
     class="nav-sidenav bg-gray-800 text-white"
   >
@@ -34,7 +34,7 @@
       </div>
     </div>
   </mat-sidenav>
-  <mat-sidenav-content>
+  <mat-sidenav-content class="bg-gray-800 text-white">
     <div class="toolbar flex items-center bg-gray-800 text-white shadow">
       <button
         class="flex-none"
