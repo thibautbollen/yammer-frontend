@@ -5,7 +5,7 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root',
 })
 export class CommonService {
-  private valueSideNiveToggled = new BehaviorSubject<boolean>(false);
+  private valueSideNiveToggled = new BehaviorSubject<boolean>(true);
   sideNavToggled = this.valueSideNiveToggled.asObservable();
 
   constructor() {}

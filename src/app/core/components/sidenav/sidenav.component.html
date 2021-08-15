@@ -1,12 +1,43 @@
 <mat-sidenav-container class="nav-container" [hasBackdrop]="true">
-  <mat-sidenav mode="side" [opened]="sideNavToggled" class="nav-sidenav">
-    <mat-nav-list>
-      <a mat-list-item routerLink="/" routerLinkActive="active">Home</a>
-    </mat-nav-list>
+  <mat-sidenav
+    mode="side"
+    [opened]="sideNavToggled"
+    class="nav-sidenav bg-gray-800 text-white"
+  >
+    <div class="m-8 flex flex-col">
+      <div class="w-10/12 h-10/12">
+        <img
+          class="w-max h-max"
+          src="https://via.placeholder.com/150"
+          alt="company"
+        />
+      </div>
+      <div>
+        <a>IT Factory</a>
+      </div>
+      <hr />
+      <div>
+        <div>
+          <a>Groups</a>
+        </div>
+        <div id="groups-container">
+          <div>Elektronics</div>
+          <div>Programming</div>
+        </div>
+      </div>
+      <hr />
+      <div>
+        <a>CompanyInfo</a>
+      </div>
+      <div>
+        <a>Edit profile</a>
+      </div>
+    </div>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar>
+    <div class="toolbar flex items-center bg-gray-800 text-white shadow">
       <button
+        class="flex-none"
         mat-icon-button
         class="menu-icon"
         aria-label="toggle side navigation menu"
@@ -14,9 +45,9 @@
       >
         <mat-icon>menu</mat-icon>
       </button>
-      <span class="example-spacer"></span>
-      <span>Yammer</span>
-    </mat-toolbar>
+      <span class="spacer flex-grow"></span>
+      <span class="flex-none">Yammer</span>
+    </div>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
